@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+	<title>Pink</title>
+</head>
+<body>
+	<header class="page-header">
+		<div class="page-header__container clearfix container">
+			<a class="page-header__logo" href="#"></a>
+			<button id="toggler"class="page-header__toggle--default" type="button" name="toggle">Открыть меню</button>
+			<nav class="main-menu">
+				<ul class="menu-list">
+					<li class="menu-list__item"><a href="#" class="menu-list__link">Главная</a></li>
+					<li class="menu-list__item"><a href="#" class="menu-list__link">Фотографии</a></li>
+					<li class="menu-list__item"><a href="#" class="menu-list__link">Конкурс</a></li>
+					<li class="menu-list__item"><a href="#" class="menu-list__link">Html Academy</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="intro">
+		<div class="intro__container container">
+			<section class="intro-download">
+				<h2 class="intro__headline">Взгляните на жизнь иначе!</h2>
+				<a class="intro__button" href="#" >Скачать приложение</a>
+				<ul class="intro__platforms">
+					<li><a href="#" class="intro__platform intro__platform--apple"></a></li>
+					<li><a href="#" class="intro__platform intro__platform--android"></a></li>
+					<li><a href="#" class="intro__platform intro__platform--wp"></a></li>
+				</ul>
+				<p class="intro__disc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+			</section>
+		</div>
+	</section>
+	<section class="features">
+		<div class="features-headline__container container">
+			<h2 class="features__headline">Устали от серости мегаполиса?</h2>
+			<h2 class="features__headline">Нам есть, что вам<br>предложить!</h2>
+		</div>
+		<div class="features__items">
+			<div class="features__container container clearfix">
+				<ul class="features-list">
+					<li class="features-list__item">
+						<h3 class="features-list__title">Поднимает настроение</h3>
+						<p class="features-list__disc">Приложение позволяет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+					</li>
+					<li class="features-list__item">
+						<h3 class="features-list__title">Меняет мир вокруг</h3>
+						<p class="features-list__disc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+					</li>
+					<li class="features-list__item">
+						<h3 class="features-list__title">Заводит новых друзей</h3>
+						<p class="features-list__disc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="interesting">
+		<div class="interesting__container container clearfix">
+			<div class="interesting__wrapper">
+				<h3 class="interesting__title">Эффект на 24 часа!</h3>
+				<p class="interesting__disc">
+					Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+				</p>
+				<a class="interesting__link" href="#">Узнать больше об исследовании</a>
+			</div>
+		</div>
+	</section>
+	<section class="reviews">
+		<div class="reviews__container container">
+			<div class="review">
+				<div class="name-wrapper">
+					<h3 class="review__name">Николай Петров</h3>
+					<span class="review__info">25 лет, водитель трамвая</span>
+				</div>
+				<p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+			</div>
+			<div class="review">
+				<div class="name-wrapper">
+					<h3 class="review__name">Иван Семёнов</h3>
+					<span class="review__info">45 лет, водитель звездолёта</span>
+				</div>
+				<p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»</p>
+			</div>
+			<div class="review">
+				<div class="name-wrapper">
+					<h3 class="review__name">Михаил Светлов</h3>
+					<span class="review__info">35 лет, человек и пароход</span>
+				</div>
+				<p class="review__text">«А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии! А ещё вот!»</p>
+			</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+				<a class="next" onclick="plusSlides(1)">&#10095</a>
+			<div class="dots">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+	</section>
+	<section class="price-list">
+		<div class="price-list__container container clearfix">
+			<table class="price-table">
+				<tr class="price-table__tr price-table__tr--headline">
+					<td class="price-table__column price-table__column--hidden">
+					</td>
+					<td class="price-table__column">
+						<p class="price-table__title">База</p>
+						<p class="price-table__value">1,99 usd</p>
+					</td>
+					<td class="price-table__column price-table__column--hit">
+						<p class="price-table__title">Стандарт</p>
+						<p class="price-table__value">3,99 usd</p>
+					</td>
+					<td class="price-table__column">
+						<p class="price-table__title">Анлим</p>
+						<p class="price-table__value">9,99 usd</p>
+					</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__column price-table__column--first">
+						<span class="price-table__disc">Розовый фильтр</span>
+						<span class="price-table__checkbox"></span>
+					</td>
+					<td class="price-table__column">
+						<span class="price-table__disc">Розовый фильтр</span>
+						<span class="price-table__checkbox"></span>
+					</td>
+					<td class="price-table__column">
+						<span class="price-table__disc">Розовый фильтр</span>
+						<span class="price-table__checkbox"></span>
+					</td>
+					<td class="price-table__column">
+						<span class="price-table__disc">Розовый фильтр</span>
+						<span class="price-table__checkbox"></span>
+					</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__column price-table__column--first">
+						<span class="price-table__disc">Смайлики</span>
+						<span class="price-table__checkbox"></span>
+						</td>
+					<td class="price-table__column">
+						<span class="price-table__disc">Смайлики</span>
+						<span class="price-table__checkbox price-table__checkbox--no"></span>
+					</td>
+					<td class="price-table__column">
+						<span class="price-table__disc">Смайлики</span>
+						<span class="price-table__checkbox"></span>
+					</td>
+					<td class="price-table__column">
+						<span class="price-table__disc">Смайлики</span>
+						<span class="price-table__checkbox"></span>
+					</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__column price-table__column--first">
+						<span class="price-table__disc">Комментарии</span>
+						<span class="price-table__checkbox"></span>
+						</td>
+					<td class="price-table__column">
+						<span class="price-table__disc">Комментарии</span>
+						<span class="price-table__checkbox price-table__checkbox--no"></span>
+					</td>
+					<td class="price-table__column">
+						<span class="price-table__disc">Комментарии</span>
+						<span class="price-table__checkbox price-table__checkbox--no"></span>
+					</td>
+					<td class="price-table__column">
+						<span class="price-table__disc">Комментарии</span>
+						<span class="price-table__checkbox"></span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<section class="contacts">
+		<div class="contacts__container container clearfix">
+			<div class="contacts__titles">	
+				<h2 class="contacts__title">Остались вопросы?</h2>
+				<h2 class="contacts__title">Свяжитесь с нами!</h2>
+			</div>
+			<div class="contacts__clearfix clearfix">
+				<div class="contacts__info contacts__info--phone">
+					<h3>Звоните:</h3>
+					<span>+7 (812) 555-66-66</span>
+				</div>
+				<div class="contacts__info contacts__info--email">
+					<h3>Пишите:</h3>
+					<span>mail@htmlacademy.ru</span>
+				</div>
+			</div>
+			<div class="contacts__info contacts__info--address">
+				<h3>Приезжайте в гости:</h3>
+				<span>ул. Большая<br>Конюшенная, 19/8</span>
+			</div>
+		</div>
+	</section>
+	<section class="map">
+		<iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d353.3057144361094!2d30.323119845928364!3d59.93879704052198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1502717245621" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</section>
+	<footer class="page-footer">
+		<div class="footer__container container clerfix">
+			<div class="page-footer__logo"></div>	
+			<div class="copyright">
+				<p class="copyright__text">
+					Разработано
+					<a class="copyright__link" href="#"></a>
+				</p>
+			</div>
+			<div class="socials">
+				<div class="social social--tw"></div>
+				<div class="social social--fb"></div>
+				<div class="social social--yt"></div>
+			</div>		
+		</div>
+	</footer>
+
+
+
+
+
+<script src="js/common.js">
+	
+</script>
+
+</body>
+</html>
