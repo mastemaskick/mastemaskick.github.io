@@ -1,0 +1,31 @@
+@mixin container() {
+	margin: 0 auto;
+
+	width: 87.5%;
+	max-width: 1172px;
+}
+
+@mixin clearfix() {
+	&::after {
+	display: table;
+	clear: both;
+	content: "";
+	}
+}
+
+@mixin button() {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 17px 52px 0;
+	height: 44px;
+
+	border-radius: 20px;
+	
+	background-color: #3dd2ae;
+
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 14px;
+}

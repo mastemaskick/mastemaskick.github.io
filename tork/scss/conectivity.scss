@@ -1,0 +1,66 @@
+.conectivity {
+	position: relative;
+	min-height: 566px;
+	
+	padding-top: 95px;
+
+	background-color: #e9eef1;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		width: 50%;
+		height: 100%;
+
+		background: url(../img/bg-conectivity.png);
+		background-size: cover;
+		background-position: center center;
+	} 
+}
+
+.conectivity__container {
+	@include container();
+}
+
+.conectivity__item {
+	max-width: 435px;
+
+	text-align: left;
+}
+
+.conectivity__title {
+	color: #2b303b;
+	font-size: 40px;
+	line-height: 55px;
+
+	margin-bottom: 28px;
+}
+
+.conectivity__icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 43px;
+	height: 31px;
+	margin-right: 10px;
+	margin-bottom: 7px;
+
+	background: url(../img/conectivity-icon.png) center center no-repeat;
+}
+
+.conectivity__slogan {
+	color: #696f7c;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 300;
+	
+	margin-bottom: 28px;
+}
+
+.conectivity__text {
+	color: #44484f;
+	font-size: 14px;
+	line-height: 30px;
+}
