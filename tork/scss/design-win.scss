@@ -1,0 +1,47 @@
+.design-win {
+	position: relative;
+	min-height: 610px;
+	padding: 0 0 0 0;
+
+	text-align: center;
+	background-color: #232831;
+}
+
+.design-win::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -55px;
+	width: 111px;
+	height: 35px;
+
+	background:url(../img/center-element.png) -6px -32px no-repeat;
+}
+
+.design-win__container {
+	@include container();
+
+	padding: 98px 0 0 0;
+}
+
+.design-win__title {
+	margin-bottom: 25px;
+}
+
+.design-win__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #9da5b0;
+
+	margin-bottom: 90px;
+}
+
+.design-win__image {
+	margin: 0 auto;
+	max-width: 980px;
+	height: 285px;
+	
+	background: url(../img/bg-design-win.png) center -21px no-repeat;
+}

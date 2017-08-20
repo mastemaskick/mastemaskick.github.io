@@ -1,0 +1,68 @@
+.advantage {
+	position: relative;
+	min-height: 505px;
+	
+	padding-top: 100px;
+
+	background-color: #835fa8;
+}
+
+.advantage__container {
+	position: relative;
+	@include container();
+}
+
+.advantage__slogan {
+	max-width: 450px;
+}
+
+.advantage__button {
+	@include button();
+
+	&:hover {
+		background-color: #a145eb;
+	}
+}
+
+.advantage__title {
+	margin-bottom: 14px;
+}
+
+.advantage__text {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #fff;
+
+	margin-bottom: 35px;
+}
+
+.advantage::before {
+	content: "";
+	position: absolute;
+	left: 44%;
+	bottom: 0;
+	z-index: 1;
+
+	width: 310px;
+	height: 270px;
+
+	background: url(../img/interface-advantage.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.advantage::after {
+	content: "";
+	position: absolute;
+	left: 60%;
+	bottom: 0;
+	z-index: 2;
+
+	width: 423px;
+	height: 594px;
+
+	background: url(../img/phone-advantage.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+}

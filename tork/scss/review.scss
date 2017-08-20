@@ -1,0 +1,36 @@
+.review {
+	position: relative;
+	min-height: 756px;
+
+	background: url(../img/bg-review.png) center center no-repeat;
+	background-size: cover;
+
+}
+
+.review__wrapper {
+	position: relative;
+
+	&::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 50%;
+	min-height: 100%;
+
+	background-color: #835fa8;
+	}
+}
+
+.review__container {
+	@include container();
+}
+
+.review__item {
+	position: relative;
+	z-index: 100;
+
+	width: 50%;
+	padding: 90px 200px 116px 20px;
+}
