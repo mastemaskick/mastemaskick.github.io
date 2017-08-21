@@ -60,12 +60,11 @@ h3 {
   z-index: 1;
   height: 755px;
   padding: 50px 0 200px 0;
-  background: url(../img/hand-header.png), 
-              url(../img/rectangle.png);
-  -webkit-background-size: 100% auto, cover;
-  background-size: 100% auto, cover;
-  background-position: left top, center center;
-  background-repeat: no-repeat repeat;
+  background: #232831 url(../img/hand-header.png);
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  background-position: left top;
+  background-repeat: no-repeat;
  }
 
 .page-header__logo {
@@ -699,7 +698,7 @@ h3 {
   .page-header {
     height: 600px;
 
-    background-size: cover;
+    background-size: 130%;
   }
 
   .page-header__slogan {
@@ -715,5 +714,12 @@ h3 {
 
   .page-header__text {
     display: none;
+  }
+}
+
+@media (min-width: 1251px) {
+  .page-header {
+    -webkit-background-size: 125%;
+    background-size: 125%;
   }
 }
