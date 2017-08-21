@@ -58,12 +58,15 @@ h3 {
 .page-header {
   position: relative;
   z-index: 1;
-  min-height: 867px;
-  padding: 50px 0 0 0;
-  background: #232831 url(../img/bg-header.png);
-  background-position: left top;
-  background-size: auto;
-  background-repeat: no-repeat; }
+  height: 755px;
+  padding: 50px 0 200px 0;
+  background: url(../img/hand-header.png), 
+              url(../img/rectangle.png);
+  -webkit-background-size: 100% auto, cover;
+  background-size: 100% auto, cover;
+  background-position: left top, center center;
+  background-repeat: no-repeat repeat;
+ }
 
 .page-header__logo {
   display: block;
@@ -72,7 +75,7 @@ h3 {
   flex-grow: 1;
   background: url(../img/logo-header.png);
   background-repeat: no-repeat; 
-  }
+}
   
 .page-header__container {
   margin: 0 auto;
@@ -689,3 +692,28 @@ h3 {
   color: #f6f7fa; }
   .footer-navigation a:hover {
     color: #835fa8; }
+
+
+
+@media (max-width: 1250px) {
+  .page-header {
+    height: 600px;
+
+    background-size: cover;
+  }
+
+  .page-header__slogan {
+    margin-top: 120px;
+    margin-left: 480px;
+  }
+    
+  .page-header__title {
+    margin-bottom: 0;
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .page-header__text {
+    display: none;
+  }
+}
